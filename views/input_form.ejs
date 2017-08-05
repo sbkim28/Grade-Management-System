@@ -1,0 +1,43 @@
+<script src='/js/input_form.js'></script>
+<section id='input_container'>
+ <input type='hidden'id='id'name='id'value=''>
+ <section class='w3-container'>
+  <label><b>No.</b></label>
+  <input type='number'id='intNum'name='intNum'min=1>
+  <p class='w3-text-red'><b class='intNum-Error'></b></p>
+ </section>
+ <section class='w3-container'>
+  <label><b>Name</b></label>
+  <input type='text'id='strName'name='strName'>
+  <p class='w3-text-red'><b class='strName-Error'></b></p>
+ </section>
+ <section class='w3-container'>
+  <label><b>Korean</b></label>
+  <input type='number'id='intKor'name='intKor'min='0'max='100'>
+  <p class='w3-text-red'><b class='intKor-Error'></b></p>
+ </section>
+ <section class='w3-container'>
+  <label><b>Math</b></label>
+  <input type='number'id='intMath'name='intMath'min='0'max='100'>
+  <p class='w3-text-red'><b class='intMath-Error'></b></p>
+ </section>
+ <section class='w3-container'>
+  <label><b>English</b></label>
+  <input type='number'id='intEng'name='intEng'min='0'max='100'>
+  <p class='w3-text-red'><b class='intEng-Error'></b></p>
+ </section>
+ <section class='w3-container'>
+  <label><b>Total</b></label>
+  <input type='number'id='intTotal'readonly>
+ </section>
+ <section class='w3-container'>
+  <label><b>Average</b></label>
+  <input type='number'id='intAvg'readonly>
+ </section>
+ <br>
+ <section class='w3-container button w3-right'>
+  <button id='deleteBtn'class='w3-button w3-deep-orange w3-hover-red w3-round w3-hide hide-btn'>Delete</button>
+  <button id='newBtn'class='w3-button w3-blue w3-hover-indigo w3-round w3-hide hide-btn'>Write New</button>
+  <button id='saveBtn'class='w3-button w3-green w3-hover-teal w3-round'>Submit</button>
+ </section>
+</section>

@@ -1,0 +1,31 @@
+<script src='/js/list_view.js'></script>
+<table class='w3-table-all w3-hoverable'>
+ <tr class='w3-blue'>
+  <th>No.</th>
+  <th>Name</th>
+  <th>Korean</th>
+  <th>Math</th>
+  <th>English</th>
+  <th>Total</th>
+  <th>Average</th>
+ </tr>
+ <% list.forEach(function(item){ %>
+  <tr class='tList'id='<%= item._id %>'>
+   <td><%= item.intNum %></td>
+   <td><%= item.strName %></td>
+   <td class='kor val'><%= item.intKor %></td>
+   <td class='math val'><%= item.intMath %></td>
+   <td class='eng val'><%= item.intEng %></td>
+   <td class='total val'><%= item.getTotal() %></td>
+   <td class='avg val'><%= item.getAvg() %></td>
+  </tr>
+ <% }) %>
+ <tr>
+  <th colspan='2'>Average</th>
+  <th id='tKor'></th>
+  <th id='tMath'></th>
+  <th id='tEng'></th>
+  <th id='tTotal'></th>
+  <th id='tAvg'></th>
+ </tr>
+</table>
