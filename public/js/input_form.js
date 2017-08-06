@@ -57,11 +57,12 @@ function save(){
 		const range = setRange(object);
 		if(lengthConfirm(object)==false){
 			alert('Enter Value');
-			alert(object.element.attr('id'));
+			object.element.focus();
 			return false;
 		}
 		if(valueConfirm(object,range.min,range.max)==false){
 			alert('Value Out of Range');
+			object.element.focus();
 			return false;
 		}
 		if(index == $('input[type!=\'hidden\']').length-1){
